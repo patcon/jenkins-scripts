@@ -1,5 +1,6 @@
 pipeline {
     agent any
+    parameters { string(name: 'SCRIPT_NAME', defaultValue: 'noop.py', description: '') }
 
     stages {
         stage('Build') {
